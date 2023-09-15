@@ -11,12 +11,14 @@
     "lint:css": "stylelint  --fix \"**/*.{vue,less,postcss,css,scss}\"",
     "format": "prettier --config .prettierrc.cjs \"src/**/*.{vue,js,css,less}\" --write",
     "prepare": "husky install",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "new:page": "node ./scripts/index.mjs"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "autoprefixer": "^10.4.15",
+    "chalk": "^5.3.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.49.0",
