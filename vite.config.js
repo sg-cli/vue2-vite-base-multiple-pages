@@ -31,6 +31,7 @@ const getEntryPath = (p) => {
 
 export default {
 	root: "./src/pages/",
+	envDir: resolve(__dirname),
 	plugins: [createVuePlugin(), stylelitPlugin(), splitVendorChunkPlugin()],
 	// ↓解析配置
 	resolve: {
